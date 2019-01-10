@@ -22,7 +22,7 @@ Create dashboard pages in WireBootstrap from one of the most popular open source
   <tr><td><img src="https://github.com/WireBootstrap/Gentelella/blob/master/images/eb-gt-kpi1.png"></td>
     <td><a href="https://github.com/WireBootstrap/Gentelella/wiki/KPI1">KPI 1</a></td>
   </tr>
-  <tr><td><img src="https://github.com/WireBootstrap/Gentelella/blob/master/images/eb-gt-kpi12.png"></td>
+  <tr><td><img src="https://github.com/WireBootstrap/Gentelella/blob/master/images/eb-gt-kpi2.png"></td>
     <td><a href="https://github.com/WireBootstrap/Gentelella/wiki/KPI2">KPI 2</a></td>
   </tr>
 </table>
