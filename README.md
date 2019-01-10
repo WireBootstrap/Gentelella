@@ -11,7 +11,8 @@ Vendor: <a href="https://colorlib.com" target="_blank">Colorlib</a><br/>
 Support: <a href="http://www.www.com" target="_blank">WireBootstrap Forums</a><br/>
 Demo: <a href="https://colorlib.com/polygon/gentelella">Gentelella Template</a><br>
   </p>
-</p>  
+
+<br/>
 <br/>
 <p>
 Create dashboard pages in WireBootstrap from one of the most popular open source Bootstrap theme templates.  This project includes multiple page layouts, KPIs, and other WireBootstrap widgets specific to Gentelella. 
