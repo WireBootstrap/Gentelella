@@ -1,7 +1,6 @@
 <h1>Gentelella</h1>
 
 <img align="left" src="https://github.com/WireBootstrap/gentelella/blob/master/images/gentelella.template.png">
-<br/>
 <p>
 <strong>
 Gentelella for WireBootstrap
@@ -12,7 +11,6 @@ Support: <a href="http://www.www.com" target="_blank">WireBootstrap Forums</a><b
 Demo: <a href="https://colorlib.com/polygon/gentelella">Gentelella Template</a><br>
   </p>
 
-<br/>
 <br/>
 <p>
 Create dashboard pages in WireBootstrap from one of the most popular open source Bootstrap theme templates.  This project includes multiple page layouts, KPIs, and other WireBootstrap widgets specific to Gentelella. 
