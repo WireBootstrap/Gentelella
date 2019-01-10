@@ -1,0 +1,73 @@
+<form class="smart-form">
+
+    <fieldset>
+
+        <div class="row">
+
+            <section class="col col-6">
+                <label>Name:</label>
+                <label class="input"><input ng-model="options.name" /></label>
+		<span class="help-block">The name of the KPI</span>
+            </section>
+
+            <section class="col col-6">
+                <label>Value:</label>
+                <div eb-smartselect
+                     eb-data="fields()"
+                     eb-model="options.schema.value"
+                     data-class="checkbox state-default">
+                </div>
+                 <span class="help-block">The value of the KPI</span>
+            </section>
+            
+        </div>
+
+    </fieldset>
+
+    <fieldset>
+
+        <div class="row">
+
+            <section class="col col-6">
+                <label>Change Value:</label>
+                <div eb-smartselect
+                     eb-data="fields()"
+                     eb-model="options.schema.valueChange"
+                     data-class="checkbox state-default">
+                </div>
+                 <span class="help-block">The change value represented in the KPI</span>
+            </section>
+
+            <section class="col col-6">
+                <label>Change Label:</label>
+                <label class="input"><input ng-model="options.lblChange" /></label>
+		<span class="help-block">The change value label</span>
+            </section>
+            
+        </div>
+
+    </fieldset>
+
+    <fieldset>
+
+        <div class="row">
+            
+            <section class="col col-6">
+                <label>CSS Value Class:</label>
+                <label class="input"><input ng-model="options.cssValue" /></label>
+                 <span class="help-block">CSS class name for the value image icon</span>
+            </section>
+            
+            <section class="col col-6">
+                <label>CSS Change Color:</label>
+                <div eb-smartselect
+                     eb-data="fields()"
+                     eb-model="options.schema.cssChange"
+                     data-class="checkbox state-default">
+                </div>
+                 <span class="help-block">CSS class name for the change color</span>
+            </section>
+
+        </div>    
+    
+</form>

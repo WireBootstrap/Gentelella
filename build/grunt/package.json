@@ -1,0 +1,18 @@
+{
+  "name": "eb.adminlte",
+  "version": "0.0.0",
+  "description": "Components for the WireBootstrap Gentelella page template",
+  "license": "//cdn.wirebootstrap.com/libs/license/index.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wirebootstrap/gentelella"
+  },
+  "dependencies": {
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-uglify": "^1.0.2"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
+}

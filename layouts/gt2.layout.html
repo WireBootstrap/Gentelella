@@ -1,0 +1,220 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>[[PageName]]</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/[[$ver.bootstrap]]/css/bootstrap.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/[[$ver.font-awesome]]/css/font-awesome.min.css">
+
+    <!-- BEGIN: Custom Theme Style -->
+    <link href="[[$app.RunRoot]]/templates/gentelella//css/gentelella-custom.min.css" rel="stylesheet">
+    [[#EnvRun-Begin]]    
+    <link href="[[$app.RunRoot]]/templates/gentelella/css/eb-gentelella.min.css" rel="stylesheet">
+    [[#EnvRun-End]]
+    [[#EnvDev-Begin]]
+    <link href="[[$app.RunRoot]]/gentelella/css/eb-gentelella.css" rel="stylesheet">
+    [[#EnvDev-End]]
+    <!-- END: Custom Theme Style -->
+
+    <link rel="shortcut icon" href="[[$app.RunRoot]]/img/logo/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="[[$app.RunRoot]]/img/logo/favicon.ico" type="image/x-icon">
+
+    [[#ModeEdit-Begin]]
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.1/dragula.min.css" rel="stylesheet">
+    <link href="/css/wire-page-edit[[$app.min]].css?v=[[$ver.app]]" rel="stylesheet">
+    [[#ModeEdit-End]]
+
+</head>
+
+<body class="nav-md">
+    <div class="container body">
+        <div class="main_container">
+
+            <!-- page content -->
+            <div class="right_col" role="main">
+                <div class="">
+                    <div class="page-title">
+                        <div class="title_left">
+                            <h3>[[PageName]]</h3>
+                            <p><small>[[PageDesc]]</small></p>
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <div class="row">
+                        <!-- WELL COLUMN -->
+                        <div id="Z1" class="eb-page-zone col-md-2 eb-x_panel" data-class="eb-page-widget">
+                            <!-- zone Z1 -->
+                            <div class="eb-page-widget" data-widget="[[WidgetId]]" data-name="[[WidgetName]]" [[EditBegin]]title="[[WidgetName]]" [[EditEnd]]>
+                                <div class="x_title">
+                                    [[#ModeEdit-Begin]]
+                                    <ul class="nav navbar-right panel_toolbox">
+                                        <li>
+                                            <a class="btn edit" data-toggle="tooltip" title="Edit this widget"><i class="fa fa-pencil-square-o"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="btn delete" data-toggle="tooltip" title="Remove this widget"> <i class="fa fa-times"></i></a>
+                                        </li>
+                                    </ul>
+                                    [[#ModeEdit-End]]
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content">
+                                    [[Element]]
+                                </div>
+
+                                [[ScriptTag]]
+
+                            </div>
+                            <!-- /zone -->
+
+                        </div>
+
+                        <!-- BOX COLUMN -->
+                        <div id="Z2" class="eb-page-zone col-md-6" data-class="eb-page-widget">
+                            <!-- zone Z2 -->
+                            <div class="eb-page-widget" data-widget="[[WidgetId]]" data-name="[[WidgetName]]" [[EditBegin]]title="[[WidgetName]]" [[EditEnd]]">
+
+                                <div class="x_panel">
+                                    <div class="x_title">
+                                        <h2>[[WidgetName]]</h2>
+                                        <ul class="nav navbar-right panel_toolbox">
+                                            [[#ModeEdit-Begin]]
+                                            <li>
+                                                <a class="btn edit" data-toggle="tooltip" title="Edit this widget"><i class="fa fa-pencil-square-o"></i></a>
+                                            </li>
+                                            <li>
+                                                <a class="btn delete" data-toggle="tooltip" title="Remove this widget"> <i class="fa fa-times"></i></a>
+                                            </li>
+                                            [[#ModeEdit-End]]
+                                            [[#ModeRun-Begin]]
+                                            <li>
+                                                <a class="eb-csv-export" data-data="[[DataSetId]]" data-name="[[WidgetName]]">
+                                                    <span data-toggle='tooltip' style="cursor:pointer" title='Export data to CSV'><i class='fa fa-file-excel-o'></i></span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="eb-filter-label" data-data="[[DataSetId]]"
+                                                   data-template="<span data-toggle='tooltip' data-html='true'><i class='fa fa-filter'></i></span>">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                            </li>
+                                            [[#ModeRun-End]]
+                                        </ul>
+
+                                        <div class="clearfix"></div>
+
+                                    </div>
+                                    <div class="x_content">
+                                        [[Element]]
+                                    </div>
+                                </div>
+
+                                [[ScriptTag]]
+
+                            </div>
+                            <!-- /zone -->
+
+                        </div>
+
+                        <!-- WELL COLUMN -->
+                        <div id="Z3" class="eb-page-zone col-md-4 eb-x_panel" data-class="eb-page-widget">
+                            <!-- zone Z3 -->
+                            <div class="eb-page-widget" data-widget="[[WidgetId]]" data-name="[[WidgetName]]" [[EditBegin]]title="[[WidgetName]]" [[EditEnd]]>
+                                <div class="x_title">
+                                    [[#ModeEdit-Begin]]
+                                    <ul class="nav navbar-right panel_toolbox">
+                                        <li>
+                                            <a class="btn edit" data-toggle="tooltip" title="Edit this widget"><i class="fa fa-pencil-square-o"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="btn delete" data-toggle="tooltip" title="Remove this widget"> <i class="fa fa-times"></i></a>
+                                        </li>
+                                    </ul>
+                                    [[#ModeEdit-End]]
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content">
+                                    [[Element]]
+                                </div>
+                                [[ScriptTag]]
+                            </div>
+                            <!-- /zone -->
+                        </div>
+                    </div>
+
+                    [[#ModeEdit-Begin]]
+                    <div class="row">
+                        <div class="col-md-3 addwidget">
+                            <a href="javascript:void(0);" data-zone="#Z1" class="btn btn-outline btn-default btn-xs btn-addwidget">
+                                <i class="fa fa-plus" aria-hidden="true"></i> Add Widget
+                            </a>
+                        </div>
+                        <div class="col-md-6 addwidget">
+                            <a href="javascript:void(0);" data-zone="#Z2" class="btn btn-outline btn-default btn-xs btn-addwidget">
+                                <i class="fa fa-plus" aria-hidden="true"></i> Add Widget
+                            </a>
+                        </div>
+                        <div class="col-md-3 addwidget">
+                            <a href="javascript:void(0);" data-zone="#Z3" class="btn btn-outline btn-default btn-xs btn-addwidget">
+                                <i class="fa fa-plus" aria-hidden="true"></i> Add Widget
+                            </a>
+                        </div>
+                    </div>
+                    [[#ModeEdit-End]]
+
+                </div>
+            </div>
+            <!-- /page content -->
+            <!-- footer content -->
+            <footer>
+                <img src="[[$app.RunRoot]]/img/eb/logo/logo_transparent_background.png" alt="WireBootstrap" style="height:26px">
+                <div class="clearfix"></div>
+            </footer>
+            <!-- /footer content -->
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/[[$ver.jquery]]/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/[[$ver.bootstrap]]/js/bootstrap.min.js"></script>
+
+    [[#EnvProd-Begin]]
+    <script src="//[[$app.CodeRoot]]/eb/[[$ver.eb]]/eb-all.min.js?v=[[$ver.eb]]"></script>
+    [[#EnvProd-End]]
+
+    [[#EnvDev-Begin]]
+    <script src="//localhost:65003/eb/dev/eb.js"></script>
+    <script src="//localhost:65003/eb/dev/eb-ui.js"></script>
+    <script src="//localhost:65003/bootstrap/dev/eb-bootstrap.js"></script>
+    [[#EnvDev-End]]
+
+    <!-- BEGIN: Custom Theme Scripts -->
+    <script src="[[$app.RunRoot]]/templates/gentelella/js/gentelella-custom.min.js"></script>
+    [[#EnvProd-Begin]]
+    <script src="[[$app.RunRoot]]/templates/gentelella/js/eb-gentelella.min.js"></script>
+    [[#EnvProd-End]]
+    [[#EnvDev-Begin]]
+    <script src="[[$app.RunRoot]]/gentelella/classes/eb-gentelella-template.js"></script>
+    [[#EnvDev-End]]
+    <!-- END: Custom Theme Scripts -->
+
+    [[#ModeEdit-Begin]]
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.1/dragula.min.js"></script>
+    <script type="text/javascript" src="/app/wire-edit-page[[$app.min]].js?v=[[$ver.app]]"></script>
+    [[#ModeEdit-End]]
+
+</body>
+</html>
