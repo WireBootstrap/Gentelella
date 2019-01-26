@@ -14,23 +14,22 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/[[$ver.font-awesome]]/css/font-awesome.min.css">
 
-    <!-- BEGIN: Custom Theme Style -->
-    <link href="[[$app.RunRoot]]/templates/gentelella//css/gentelella-custom.min.css" rel="stylesheet">
-    [[#EnvRun-Begin]]    
-    <link href="[[$app.RunRoot]]/templates/gentelella/css/eb-gentelella.min.css" rel="stylesheet">
-    [[#EnvRun-End]]
-    [[#EnvDev-Begin]]
-    <link href="[[$app.RunRoot]]/gentelella/css/eb-gentelella.css" rel="stylesheet">
-    [[#EnvDev-End]]
-    <!-- END: Custom Theme Style -->
+   <!-- Custom Theme Style -->
+   <link href="[[$app.RunRoot]]/templates/gentelella//css/gentelella-custom.min.css" rel="stylesheet">
+   [[#EnvProd-Begin]]    
+   <link href="[[$app.RunRoot]]/templates/gentelella/css/eb-gentelella.min.css" rel="stylesheet">
+   [[#EnvProd-End]]
+   [[#EnvDev-Begin]]
+   <link href="[[$app.CodeRoot]]/gentelella/css/eb-gentelella.css" rel="stylesheet">
+   [[#EnvDev-End]]
 
-    <link rel="shortcut icon" href="[[$app.RunRoot]]/img/logo/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="[[$app.RunRoot]]/img/logo/favicon.ico" type="image/x-icon">
+   <link rel="shortcut icon" href="[[%app.RunRoot]]/img/eb/logo/favicon.ico" type="image/x-icon">
+   <link rel="icon" href="[[$app.RunRoot]]/img/eb/logo/favicon.ico" type="image/x-icon">
 
-    [[#ModeEdit-Begin]]
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.1/dragula.min.css" rel="stylesheet">
-    <link href="/css/wire-page-edit[[$app.min]].css?v=[[$ver.app]]" rel="stylesheet">
-    [[#ModeEdit-End]]
+   [[#ModeEdit-Begin]]
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.1/dragula.min.css" rel="stylesheet">
+   <link href="/css/wire-page-edit[[$app.min]].css?v=[[$ver.app]]" rel="stylesheet">
+   [[#ModeEdit-End]]
 
 </head>
 
@@ -54,7 +53,7 @@
                         <!-- WELL COLUMN -->
                         <div id="Z1" class="eb-page-zone col-md-2 eb-x_panel" data-class="eb-page-widget">
                             <!-- zone Z1 -->
-                            <div class="eb-page-widget" data-widget="[[WidgetId]]" data-name="[[WidgetName]]" [[EditBegin]]title="[[WidgetName]]" [[EditEnd]]>
+                            <div class="eb-page-widget" data-widget="[[WidgetId]]" data-name="[[WidgetName]]" [[#ModeEdit-Begin]]title="[[WidgetName]]"[[#ModeEdit-End]]>
                                 <div class="x_title">
                                     [[#ModeEdit-Begin]]
                                     <ul class="nav navbar-right panel_toolbox">
@@ -82,7 +81,7 @@
                         <!-- BOX COLUMN -->
                         <div id="Z2" class="eb-page-zone col-md-6" data-class="eb-page-widget">
                             <!-- zone Z2 -->
-                            <div class="eb-page-widget" data-widget="[[WidgetId]]" data-name="[[WidgetName]]" [[EditBegin]]title="[[WidgetName]]" [[EditEnd]]">
+                            <div class="eb-page-widget" data-widget="[[WidgetId]]" data-name="[[WidgetName]]" [[#ModeEdit-Begin]]title="[[WidgetName]]"[[#ModeEdit-End]]>
 
                                 <div class="x_panel">
                                     <div class="x_title">
@@ -131,7 +130,7 @@
                         <!-- WELL COLUMN -->
                         <div id="Z3" class="eb-page-zone col-md-4 eb-x_panel" data-class="eb-page-widget">
                             <!-- zone Z3 -->
-                            <div class="eb-page-widget" data-widget="[[WidgetId]]" data-name="[[WidgetName]]" [[EditBegin]]title="[[WidgetName]]" [[EditEnd]]>
+                            <div class="eb-page-widget" data-widget="[[WidgetId]]" data-name="[[WidgetName]]" [[#ModeEdit-Begin]]title="[[WidgetName]]"[[#ModeEdit-End]]>
                                 <div class="x_title">
                                     [[#ModeEdit-Begin]]
                                     <ul class="nav navbar-right panel_toolbox">
@@ -196,20 +195,19 @@
     [[#EnvProd-End]]
 
     [[#EnvDev-Begin]]
-    <script src="//localhost:65003/eb/dev/eb.js"></script>
-    <script src="//localhost:65003/eb/dev/eb-ui.js"></script>
-    <script src="//localhost:65003/bootstrap/dev/eb-bootstrap.js"></script>
+    <script src="[[$app.CodeRoot]]/eb/classes/eb.js"></script>
+    <script src="[[$app.CodeRoot]]/eb/classes/eb-ui.js"></script>
+    <script src="[[$app.CodeRoot]]/bootstrap/build/lib/eb-bootstrap.js"></script>
     [[#EnvDev-End]]
 
-    <!-- BEGIN: Custom Theme Scripts -->
+    <!-- Custom Theme Scripts -->
     <script src="[[$app.RunRoot]]/templates/gentelella/js/gentelella-custom.min.js"></script>
     [[#EnvProd-Begin]]
-    <script src="[[$app.RunRoot]]/templates/gentelella/js/eb-gentelella.min.js"></script>
+    <script src="[[$app.CodeRoot]]/gentelella/[[$ver.gentelella]]/js/eb-gentelella.min.js?v=[[$ver.gentelella]]"></script>
     [[#EnvProd-End]]
     [[#EnvDev-Begin]]
-    <script src="[[$app.RunRoot]]/gentelella/classes/eb-gentelella-template.js"></script>
+    <script src="[[$app.CodeRoot]]/gentelella/classes/eb-gentelella-template.js"></script>
     [[#EnvDev-End]]
-    <!-- END: Custom Theme Scripts -->
 
     [[#ModeEdit-Begin]]
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.1/dragula.min.js"></script>
